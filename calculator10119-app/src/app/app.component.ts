@@ -32,9 +32,14 @@ export class AppComponent {
         this.operator=value;
         return;
       }
-      if(this.resultValue!==''){
+      if(this.resultValue!==''){ //=を押した後、結果で演算子計算を行うため。
+        if(this.operator==='+'||this.operator==='-'){
         this.currentValue='';
         this.resultValue='';
+        }else if(this.operator==='*'||this.operator==='/'){
+          this.currentValue='1';
+          this.resultValue='';
+        }
       }
 
       if(this.prevValue!==''&&this.operator!==''){
