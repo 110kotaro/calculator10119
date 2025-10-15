@@ -14,14 +14,26 @@ html, body{
     overflow: hidden;
 }
 
+.divide{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #a7a7a7;
+    background: white;
+}
+
+.subdisplay{
+    font-size: 30px;
+    min-height: 28px;
+    word-break: break-all;
+    padding: 18px;
+    color: black;
+}
+
 .display{
     font-size: 40px;
     min-height: 28px;
     word-break: break-all;
     padding: 18px;
-    background: white;
-    border-bottom: 1px solid #a7a7a7;
-    text-align: right;
     color: black;
 }
 
